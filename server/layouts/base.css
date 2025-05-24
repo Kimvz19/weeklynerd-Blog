@@ -38,7 +38,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 6px 12px;
-  font-size: 15px;
+  font-size: 18px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   position: sticky;
@@ -147,7 +147,7 @@ footer p {
   .menu-bar {
     flex-direction: row;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 20px;
   }
 
