@@ -54,12 +54,12 @@ app.get('/', async (req, res) => {
 });
 
 
-// ⭐ About me page
-app.get('/about-me', async (req, res) => {
+// ⭐ subjects overview
+app.get('/subjects-overview', async (req, res) => {
   try {
      // data + geo gegevens renderen
-    res.send(renderTemplate('server/views/about-me.liquid', {
-      title: 'about-me',
+    res.send(renderTemplate('server/views/subjects-overview.liquid', {
+      title: 'subjects overview',
     }));
 
     //fout melding 
@@ -69,27 +69,27 @@ app.get('/about-me', async (req, res) => {
   }
 });
 
-// ⭐ my work page
-app.get('/my-work', async (req, res) => {
+// ⭐ weekly nerd overview page
+app.get('/weeklynerd-overview', async (req, res) => {
 
-  res.send(renderTemplate('server/views/my-work.liquid', {
-    title: 'my work',
+  res.send(renderTemplate('server/views/weeklynerd-overview.liquid', {
+    title: 'weeklynerd overview',
   }));
 });
 
-// ⭐ Contact page
-app.get('/contact', async (req, res) => {
+// ⭐ meesterproef page
+app.get('/meesterproef', async (req, res) => {
 
-  res.send(renderTemplate('server/views/contact.liquid', {
-    title: 'contact',
+  res.send(renderTemplate('server/views/meesterproef.liquid', {
+    title: 'meesterproef',
   }));
 });
 
-// ⭐ Experiences page
-app.get('/experiences', async (req, res) => {
+// ⭐ hackathon page
+app.get('/hackathon', async (req, res) => {
 
-  res.send(renderTemplate('server/views/experiences.liquid', {
-    title: 'experiences',
+  res.send(renderTemplate('server/views/hackathon.liquid', {
+    title: 'hackathon',
   }));
 });
 
