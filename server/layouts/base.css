@@ -46,6 +46,14 @@ header, footer{
   z-index: 100;
 }
 
+.menu-bar a{
+  color: #d66a94;
+
+  &:hover {
+    color: #d12b6b;
+  }
+}
+
 
 /* footer  */
 .navigationIcons,
@@ -60,7 +68,7 @@ footer p {
 .navigationIcons {
   bottom: 30px;
   left: 50%;
-  padding: 30px 80px;
+  padding: 18px 80px;
   background: rgba(255, 255, 255, 0.6);
 
   li a{
