@@ -112,3 +112,18 @@ footer a{
   opacity: 1;
   transform: translateY(0);
 }
+
+/* active a - styling */
+.icon-nav a.active {
+  color: #d66a94;
+}
+
+.icon-nav a.active::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d66a94;
+  margin-top: 10px;
+}

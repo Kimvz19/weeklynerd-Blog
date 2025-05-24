@@ -46,48 +46,46 @@
     {% block experiences %}{% endblock %} {% endcomment %}
   </main>
 
-  {% comment %} <footer>
-    <nav class="navigationIcons">
-    <ul>
-      <li class="icon-nav">🤓</li>
-      <li class="icon-nav">👩</li>
-      <li class="icon-nav">🎓</li>
-      <li class="icon-nav">🗂️</li>
-      <li class="icon-nav">🎀</li>
-    </ul>
-    </nav>
-
-    <p>&copy; {{ 'now' | date: "%Y" }} Kim van Zuilen</p>
-  </footer> {% endcomment %}
+DEBUG: path is {{ request.path }} 
 
   <footer>
   <nav class="navigationIcons">
     <ul>
-      <li class="icon-nav"><a href="/">
+      <li class="icon-nav">
+        <a href="/"
+       class="{% if path == '/' %}active{% endif %}">
         🎀
         <span class="icon-label">Home</span>
         </a>
       </li>
 
-      <li class="icon-nav"><a href="/subjects-overview">
+      <li class="icon-nav">
+        <a href="/subjects-overview"
+        class="{% if path == '/subjects-overview' %}active{% endif %}">
         🗂️
         <span class="icon-label">Subjects</span>
         </a>
       </li>
 
-      <li class="icon-nav"><a href="/weeklynerd-overview">
+      <li class="icon-nav">
+        <a href="/weeklynerd-overview"
+        class="{% if path == '/weeklynerd-overview' %}active{% endif %}">
         🤓
         <span class="icon-label">Weekly</span>
         </a>
       </li>
 
-      <li class="icon-nav"><a href="/hackathon">
+      <li class="icon-nav">
+        <a href="/hackathon"
+        class="{% if path == '/hackathon' %}active{% endif %}">
         👩🏻‍💻
         <span class="icon-label">Hackathon</span>
         </a>
       </li>
 
-      <li class="icon-nav"><a href="/meesterproef">
+      <li class="icon-nav">
+        <a href="/meesterproef"
+        class="{% if path == '/meesterproef' %}active{% endif %}">
         🎓
         <span class="icon-label">Meesterproef</span>
         </a>
