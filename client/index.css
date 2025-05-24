@@ -38,47 +38,34 @@
   
   /* font */
   --font-primair: "unbounded", sans-serif;
-  --font-secundair: "CLAY", sans-serif;
-  --font-third: "CLAY", sans-serif;
-
-  /* derde font toevoegen  */
 }
 
 
 /*  ⭐️ GENERAL STYLING ⭐️ */
-body {
-  font-family: var(--font-primair);
-  font-weight: 300;
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-* {
-  color: black;
-  text-decoration: none;
-  font-family: "Unbounded";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-
-/* ⭐️ HEADER & FOOTER STYLING ⭐️ */
-header, footer {
-  background-color: #eee;
-  padding: 1rem;
-  text-align: center;
-}
-
-main {
-  padding: 2rem;
-}
-
-ul, li {
+ul, ol, li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
