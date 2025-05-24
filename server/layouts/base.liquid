@@ -46,7 +46,7 @@
     {% block experiences %}{% endblock %} {% endcomment %}
   </main>
 
-  <footer>
+  {% comment %} <footer>
     <nav class="navigationIcons">
     <ul>
       <li class="icon-nav">🤓</li>
@@ -56,9 +56,39 @@
       <li class="icon-nav">🎀</li>
     </ul>
     </nav>
-    
+
     <p>&copy; {{ 'now' | date: "%Y" }} Kim van Zuilen</p>
-  </footer>
+  </footer> {% endcomment %}
+
+  <footer>
+  <nav class="navigationIcons">
+    <ul>
+      <li class="icon-nav">
+        🤓
+        <span class="icon-label">Weekly</span>
+      </li>
+      <li class="icon-nav">
+        👩
+        <span class="icon-label">Hackathon</span>
+      </li>
+      <li class="icon-nav">
+        🎓
+        <span class="icon-label">Meesterproef</span>
+      </li>
+      <li class="icon-nav">
+        🗂️
+        <span class="icon-label">Subjects</span>
+      </li>
+      <li class="icon-nav">
+        🎀
+        <span class="icon-label">Minor</span>
+      </li>
+    </ul>
+  </nav>
+  
+  <p>&copy; {{ 'now' | date: "%Y" }} Kim van Zuilen</p>
+</footer>
+
 
 </body>
 </html>
