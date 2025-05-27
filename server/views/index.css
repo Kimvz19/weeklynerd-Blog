@@ -1,2 +1,65 @@
 /* ⭐️ HOME PAGE ⭐️ */
 
+  .widgets {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .widgets ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 1500px;
+    overflow: auto;
+    height: 100%;
+    background-color: blue;
+  }
+  
+  
+  .widgets li {
+    background-color: salmon;
+    border-radius: 2rem;
+    text-align: center;
+    overflow: auto;
+
+    width: 10rem; height: 10rem;
+
+    &:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 25rem;
+    }
+
+    &:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23rem;
+    gap: 5rem;
+
+    h1{
+        font-weight: bold;
+    }
+
+
+        p{
+            font-size: 50px;
+        }
+    }
+
+
+  }
+
+
+  @media (min-width: 700px) {
+    .widgets ul {
+        flex-direction: row;
+    }
+  }
