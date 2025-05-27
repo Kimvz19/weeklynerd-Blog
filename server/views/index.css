@@ -3,8 +3,9 @@
 .widgets {
   padding: 25px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 50px;
 
   li:last-child {
     margin-bottom: 10rem;
@@ -31,6 +32,31 @@
   /* background-color: #d37f9f; */
 }
 
+.introduction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80rem;
+  font-size: 17px;
+  gap: .8rem;
+  height: 20rem;
+
+  h2{
+    font-weight: 500;
+    font-size: 35px;
+    font-size: 45px;
+    /* background: linear-gradient(90deg, #d15370, #ec83b9 , rgb(248, 172, 206)); */
+    background: linear-gradient(90deg, #e07f96, #df9ead,  #d15370, #e23974, #d15370, #df9ead, #e07f96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p{
+    font-weight: 200;
+    font-size: 20px;
+  }
+}
 
 .weekly-nerd {
   display: flex;
@@ -183,7 +209,6 @@
     -webkit-text-fill-color: transparent;
   }
 }
-
 
 
 
