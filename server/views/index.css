@@ -269,8 +269,10 @@
 } */
 
 .overview-work {
-  padding: 1rem;
+  /* padding: 1rem; */
   margin-bottom: 1rem;
+  padding: 1.5rem;
+  width: 100%;
 
   h2 {
    display: none;
@@ -280,7 +282,7 @@
     overflow: auto;
     scroll-snap-type: x mandatory;
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 
   ul {
@@ -366,6 +368,7 @@
   .widgets ul {
     flex-direction: row;
   }
+
 }
 
 
