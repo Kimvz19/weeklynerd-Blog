@@ -40,7 +40,7 @@
   width: 80rem;
   font-size: 17px;
   gap: .8rem;
-  height: 20rem;
+  height: 15rem;
 
   h2{
     font-weight: 500;
@@ -54,6 +54,7 @@
 
   p{
     font-weight: 200;
+    max-width: 50rem;
     font-size: 20px;
   }
 }

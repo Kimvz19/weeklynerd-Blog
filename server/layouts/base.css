@@ -71,7 +71,7 @@ footer p {
 .navigationIcons {
   bottom: 50px;
   left: 50%;
-  padding: 14px 22px;
+  padding: 10px 25px;
   background: rgba(255, 255, 255, 0.6);
 }
 
@@ -86,7 +86,7 @@ footer ul {
 .icon-nav {
   font-size: 26px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   transition: transform 0.3s ease;
   position: relative;
@@ -98,6 +98,7 @@ footer ul {
   align-items: center;
   color: var(--color-black);
   text-decoration: none;
+  width: 2.5rem;
 }
 
 .icon-nav:hover {
@@ -152,7 +153,7 @@ footer p {
   }
 
   .navigationIcons {
-    padding: 18px 80px;
+    /* padding: 18px 80px; */
     bottom: 30px;
   }
 
