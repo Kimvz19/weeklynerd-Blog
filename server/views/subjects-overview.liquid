@@ -1,9 +1,95 @@
 {% layout "server/layouts/base.liquid" %}
 
-{% block aboutMe %}
+{% block schoolSubjects %}
 
-{% comment %} informatie over Kim {% endcomment %}
-<p>kim haar about me</p>
+
+<ul class="subjects-overview">
+    <li><h2>School subjects</h2></li>
+    <li> <p>As part of the Web Design & Development minor, I created a product for every subject.</p></li>
+    <li><p>Scroll down to see what I've made</p></li>
+    <li>  
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5m0 14-4-4m4 4 4-4"/>
+        </svg></li>
+    </li>
+</ul>
+
+
+
+{% comment %} tape with all the school subjects {% endcomment %}
+<div class="tape-bar">
+    <ul class="scrolling-list">
+      <li>Meesterproef</li>
+      <li>✹</li>
+      <li>Web Apps from Scratch</li>
+      <li>✹</li>
+      <li>Css to the Resue</li>
+      <li>✹</li>
+      <li>Browser Technology!</li>
+      <li>✹</li>
+      <li>Hackathon</li>
+      <li>✹</li>
+      <li>API</li>
+      <li>✹</li>
+      <li>Human Centered Design</li>
+  
+  
+      <!-- 🔁 Duplicatie voor naadloze loop -->
+      <li>Meesterproef</li>
+      <li>✹</li>
+      <li>Web Apps from Scratch</li>
+      <li>✹</li>
+      <li>Css to the Resue</li>
+      <li>✹</li>
+      <li>Browser Technology!</li>
+      <li>✹</li>
+      <li>Hackathon</li>
+      <li>✹</li>
+      <li>API</li>
+      <li>✹</li>
+      <li>Human Centered Design</li>
+    </ul>
+</div>
+
+
+<section class="overview-work">
+  <h2>Projects webdesign & development </h2>
+  <div class="scroll-container">
+  <ul>
+    <li>
+      <a href="#">
+        <img src="/assets/images/tapchat.png" alt="project tapchat">
+      </a>
+    </li>
+      <li>
+        <a href="#">
+        <img src="/assets/images/nintendo-switch-lite.png" alt="project nintendo switch lite made with CSS only, no Javascript">
+      </a>
+    </li>
+      {% comment %} <li>
+        <a href="#">
+        <img src="/assets/images/information-design.png" alt="project information design">
+      </a>
+    </li> {% endcomment %}
+    <li>
+      <a href="#">
+        <img src="/assets/images/women-in-tech.png" alt="project women in tech">
+      </a>
+    </li>
+    {% comment %} <li>
+      <a href="#">
+        <img src="/assets/images/kylie-cosmetics.png" alt="project tax authorities">
+      </a>
+    </li> {% endcomment %}
+    <li>
+      <a href="#">
+        <img src="/assets/images/tax-authorities.png" alt="project tax authorities">
+      </a>
+    </li>
+  </ul>
+  </div>
+</section>
+
 
 {% endblock %}
 

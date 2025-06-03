@@ -25,6 +25,15 @@ body{
   color: var(--color-black);
 }
 
+h2{
+    font-weight: 500;
+    font-size: 45px;
+    /* background: linear-gradient(90deg, #d15370, #ec83b9 , rgb(248, 172, 206)); */
+    background: linear-gradient(90deg, #e07f96, #df9ead,  #d15370, #e23974, #d15370, #df9ead, #e07f96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* ⭐️ HEADER & FOOTER STYLING ⭐️ */
 header,
 footer {
