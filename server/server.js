@@ -83,6 +83,24 @@ app.get('/hackathon', async (req, res) => {
   }
 });
 
+
+// Projects work
+
+app.get('/project-tapchat', async (req, res) => {
+  try {
+    res.send(renderTemplate('server/views/project-tapchat.liquid', {
+      title: 'Tapchat'
+    }, req));
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Tapchat kon niet laden');
+  }
+});
+
+
+
+
+
 // ⭐ STATIC FILES & SERVER START ⭐ //
 app
   .use(logger())
