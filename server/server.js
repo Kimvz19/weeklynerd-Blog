@@ -88,14 +88,109 @@ app.get('/hackathon', async (req, res) => {
 
 app.get('/project-tapchat', async (req, res) => {
   try {
-    res.send(renderTemplate('server/views/project-tapchat.liquid', {
+    res.send(renderTemplate('server/views/projects/project-tapchat.liquid', {
       title: 'Tapchat'
     }, req));
   } catch (err) {
     console.error(err);
-    res.status(500).send('Tapchat kon niet laden');
+    res.status(500).send('Project Tapchat kon niet laden');
   }
 });
+
+app.get('/project-nintendo', async (req, res) => {
+  try {
+    res.send(renderTemplate('server/views/projects/project-nintendo.liquid', {
+      title: 'Nintendo Switch'
+    }, req));
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Project Nintendo Switch Lite kon niet laden');
+  }
+});
+
+app.get('/project-nintendo', async (req, res) => {
+  try {
+    res.send(renderTemplate('server/views/projects/project-nintendo.liquid', {
+      title: 'Nintendo Switch'
+    }, req));
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Project Nintendo Switch Lite kon niet laden');
+  }
+});
+
+app.get('/project-women-tech', async (req, res) => {
+  try {
+    res.send(renderTemplate('server/views/projects/project-women-tech.liquid', {
+      title: 'Women in Tech'
+    }, req));
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Project Women in Tech kon niet laden');
+  }
+});
+
+app.get('/project-tax', async (req, res) => {
+  try {
+    res.send(renderTemplate('server/views/projects/project-tax.liquid', {
+      title: 'Tax authorities'
+    }, req));
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Project Tax kon niet laden');
+  }
+});
+
+
+// Weekly nerds 
+// Speakers
+
+// app.get('/speaker-kilian', async (req, res) => {
+//   try {
+//     res.send(renderTemplate('server/views/weeklynerds/speaker-kilian.liquid', {
+//       title: 'Kilian'
+//     }, req));
+//   } catch (err) {
+//     console.error(err);
+//     res.status(500).send('Speaker Kilian kon niet laden');
+//   }
+// });
+
+
+// Weekly nerds routes
+const speakerRoute = (path, file, title) => {
+  app.get(path, async (req, res) => {
+    try {
+      res.send(renderTemplate(`server/views/weeklynerds/${file}.liquid`, {
+        title: title
+      }, req));
+
+    } catch (err) {
+      console.error(err);
+      res.status(500).send(`${title} kon niet laden`);
+    }
+  });
+};
+
+// Routes voor alle sprekers
+speakerRoute('/speaker-kilian', 'speaker-kilian', 'Kilian');
+speakerRoute('/speaker-peter-paul-koch', 'speaker-peter-paul-koch', 'Peter Paul Koch');
+speakerRoute('/speaker-nils', 'speaker-nils', 'Nils Binder');
+speakerRoute('/speaker-nienke', 'speaker-nienke', 'Nienke de Keijzer');
+speakerRoute('/speaker-roel', 'speaker-roel', 'Roel Nieskens');
+speakerRoute('/speaker-cassie', 'speaker-cassie', 'Cassie Evans');
+speakerRoute('/speaker-krijn', 'speaker-krijn', 'Krijn');
+speakerRoute('/speaker-jeremy', 'speaker-jeremy', 'Jeremy Keith');
+speakerRoute('/speaker-julia', 'speaker-julia', 'Julia Miocene');
+speakerRoute('/speaker-declan', 'speaker-declan', 'Declan');
+speakerRoute('/speaker-cyd', 'speaker-cyd', 'Cyd');
+speakerRoute('/speaker-rosa', 'speaker-rosa', 'Rosa');
+speakerRoute('/speaker-niels', 'speaker-niels', 'Niels Leenheer');
+speakerRoute('/speaker-iq', 'speaker-iq', 'Io Digital');
+speakerRoute('/speaker-q42', 'speaker-q42', 'Q42');
+speakerRoute('/speaker-marieke', 'speaker-marieke', 'Marieke');
+speakerRoute('/speaker-miriam', 'speaker-miriam', 'Miriam');
+
 
 
 
