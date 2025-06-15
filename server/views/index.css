@@ -517,7 +517,6 @@
   line-height: 1.5;
   padding: 1rem;
   margin: 14px;
-  background-color: white;
   border-radius: 5rem;
 
   
@@ -559,3 +558,133 @@
 }
 
 
+/* Project  */
+
+/* Horizontale scrollbare UL */
+.project-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 5rem 2rem 1rem 5rem ;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  list-style: none;
+  margin: 0;
+
+}
+
+.project-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+.project-gallery::-webkit-scrollbar-thumb {
+  background: #e0d4ea;
+  border-radius: 20px;
+}
+
+/* LI met kaart */
+.project-card {
+  flex: 0 0 auto;
+  width: 280px;
+  background: #f4fdf6;
+  border: 2px solid #c9ecd4;
+  border-radius: 24px;
+  box-shadow: 6px 6px 0px #c9ecd4;
+  padding: 24px 12px 12px 12px;
+  scroll-snap-align: start;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-origin: center center;
+  box-sizing: border-box;
+
+  &:first-child{
+    opacity: 0;
+    width: 2rem;
+  }
+}
+
+
+.project-card:hover,
+.project-card:focus,
+.project-card:focus-within {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+
+.project-card img {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+}
+
+
+.nametag {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  background: #fff;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-style: italic;
+  border-radius: 18px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transform: rotate(-4deg);
+  border: 1.5px dashed #ccc;
+  z-index: 2;
+}
+
+
+/* Container met vaste verhouding (4:3 voorbeeld) */
+.image-wrapper {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff; /* of pastel fallback */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Afbeelding mooi passend binnen de ratio */
+.image-wrapper img {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Nametag kleuren */
+.nametag-pink {
+  background-color: #fdd8ea;
+  border-color: #e9a5c6;
+  color: #a63467;
+}
+.nametag-lavender {
+  background-color: #e8dbfc;
+  border-color: #b9a1e1;
+  color: #5e4a8d;
+}
+.nametag-mint {
+  background-color: #daf7ef;
+  border-color: #93e1c6;
+  color: #2e8263;
+}
+
+/* Paperclip decoratie bij hover */
+.project-card::before {
+  content: "📎";
+  position: absolute;
+  top: -14px;
+  left: 10%;
+  transform: translateX(-50%) scale(0);
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+  z-index: 5;
+}
+
+.project-card:hover::before,
+.project-card:focus::before,
+.project-card:focus-within::before {
+  transform: translateX(-50%) scale(1);
+}
