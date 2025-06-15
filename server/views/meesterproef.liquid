@@ -1,96 +1,51 @@
 {% layout "server/layouts/base.liquid" %}
 
 {% block meesterproef %}
-<section class="introduction-hackathon">
-    <h2>Meesterproef</h2>
-    <h3>Framer framed archive for neurodivert people!</h3>
-    <p>Within a week, my group and I made a website to honour the womens in tech!</p>
-    <img src="/assets/images/nintendo-switch-lite.png" alt="Meesterproef project">
-</section>
+<div class="single-project">
 
-{% comment %} tape with all the school subjects {% endcomment %}
-<div class="tape-bar">
-    <ul class="scrolling-list">
-      <li>Masterpiece</li>
-      <li>✹</li>
-      <li>4 weeks</li>
-      <li>✹</li>
-      <li>Teamwork</li>
-      <li>✹</li>
-      <li>Framer Framed</li>
-      <li>✹</li>
-      <li>target group : Neurodivergents </li>
-      <li>✹</li>
-      <li>Data visualisation</li>
-      <li>✹</li>
-      <li>The final project</li>
-      <li>✹</li>
-  
-      <!-- 🔁 Duplicatie voor naadloze loop -->
-      <li>Masterpiece</li>
-      <li>✹</li>
-      <li>4 weeks</li>
-      <li>✹</li>
-      <li>Teamwork</li>
-      <li>✹</li>
-      <li>Framer Framed</li>
-      <li>✹</li>
-      <li>target group : Neurodivergents </li>
-      <li>✹</li>
-      <li>Data visualisation</li>
-      <li>✹</li>
-      <li>The final project</li>
-      <li>✹</li>
-    </ul>
-</div>
-
-
-<section class="tap-chat-project">
-  <section class="hero">
-    <div class="hero-text">
-      <p class="badge">Human Centered Design</p>
-      <h1>Een Persoonlijke App voor <span class="highlight">Eric Groot Kormelink</span></h1>
-      <p class="intro">
+  <!-- Introductie -->
+  <section class="introduction-project">
+    <ul>
+      <li><p class="badge">Human Centered Design</p></li>
+      <li><h1>Een Persoonlijke App voor <span class="highlight">Eric Groot Kormelink</span></h1></li>
+      <li><p class="intro">
         Beleidsmedewerker Mobiliteit en Toegankelijkheid bij Cliëntenbelang Amsterdam. Zet zich in voor fysieke en digitale toegankelijkheid in Amsterdam.
-      </p>
-      <a href="/assets/images/tapchat.png" class="btn-primary" target="_blank">Lees zijn verhaal →</a>
-    </div>
-    <figure class="hero-image">
-      <img src="/assets/images/tapchat.png" alt="Portret van Eric Groot Kormelink" />
-    </figure>
-  </section>
-
-  <section class="section-divider">
-    <p>✨ Project Inzichten</p>
+      </p></li>
+      <li><a href="#" class="btn-primary" target="_blank">See live project→</a></li>
+    </ul>
   </section>
 
   <article class="project-section">
-    <section class="text">
+    <div class="text">
       <h2>📌 Projectdoel</h2>
       <p>
         Voor het vak Human Centered Design is het doel om een persoonlijke app te ontwikkelen voor Eric Groot Kormelink. De focus ligt op het verbeteren van de toegankelijkheid voor mensen met een beperking in Amsterdam.
       </p>
-    </section>
+    </div>
+    <div class="image">
+      <img src="/assets/images/tapchat.png" alt="Overzicht van het project" />
+    </div>
   </article>
-
 
   <article class="project-section">
-    <section class="text">
-        <h2>👤 Gebruikerspersona: Eric</h2>
-        <ul>
-            <li><strong>Naam:</strong> Eric Groot Kormelink</li>
-            <li><strong>Leeftijd:</strong> 50+</li>
-            <li><strong>Rol:</strong> Beleidsmedewerker Mobiliteit en Toegankelijkheid</li>
-            <li><strong>Organisatie:</strong> Cliëntenbelang Amsterdam</li>
-            <li><strong>Doelen:</strong> Verbeteren van fysieke en digitale toegankelijkheid in Amsterdam</li>
-            <li><strong>Uitdagingen:</strong> Navigeren door complexe informatie, behoefte aan overzichtelijke en toegankelijke tools</li>
-          </ul>
-    </section>
-    <figure class="image">
-        <img src="/assets/images/tapchat.png" alt="Persona van Eric" />
-      </figure>
+    <div class="text">
+      <h2>📌 Projectdoel</h2>
+      <p>
+        Voor het vak Human Centered Design is het doel om een persoonlijke app te ontwikkelen voor Eric Groot Kormelink. De focus ligt op het verbeteren van de toegankelijkheid voor mensen met een beperking in Amsterdam.
+      </p>
+    </div>
   </article>
 
-</section>
+  <article class="project-section">
+    <div class="image">
+      <img src="/assets/images/tapchat.png" alt="Overzicht van het project" />
+    </div>
+    <div class="image">
+      <img src="/assets/images/tapchat.png" alt="Overzicht van het project" />
+    </div>
+  </article>
+
+</div>
+
 
 {% endblock %}
