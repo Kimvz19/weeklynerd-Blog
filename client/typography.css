@@ -1,6 +1,8 @@
-/* ⭐️ typography styling ⭐️ */
+/* //////////////////////////// */
+/* 🎀🎀 typography styling 🎀🎀 */
+/* //////////////////////////// */
 
-/* font headings */
+/* FONTS */
 @font-face {
     font-family: 'CLAY';
     src: url('/public/fonts/CLAY.otf') format('opentype');

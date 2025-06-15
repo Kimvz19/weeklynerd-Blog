@@ -39,14 +39,14 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.get('/subjects-overview', async (req, res) => {
+app.get('/projects-overview', async (req, res) => {
   try {
-    res.send(renderTemplate('server/views/subjects-overview.liquid', {
-      title: 'subjects overview'
+    res.send(renderTemplate('server/views/projects-overview.liquid', {
+      title: 'projects overview'
     }, req));
   } catch (err) {
     console.error(err);
-    res.status(500).send('subjects page kon niet laden');
+    res.status(500).send('projects page kon niet laden');
   }
 });
 
@@ -141,20 +141,6 @@ app.get('/project-tax', async (req, res) => {
   }
 });
 
-
-// Weekly nerds 
-// Speakers
-
-// app.get('/speaker-kilian', async (req, res) => {
-//   try {
-//     res.send(renderTemplate('server/views/weeklynerds/speaker-kilian.liquid', {
-//       title: 'Kilian'
-//     }, req));
-//   } catch (err) {
-//     console.error(err);
-//     res.status(500).send('Speaker Kilian kon niet laden');
-//   }
-// });
 
 
 // Weekly nerds routes

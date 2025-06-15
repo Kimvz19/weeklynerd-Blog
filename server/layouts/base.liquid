@@ -6,9 +6,10 @@
   <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon" />
 
   {% block head %}
+  {% comment %} gets loaded from server.js {% endcomment %}
     <title>{{ title }}</title>
 
-    {% comment %} google fonts {% endcomment %}
+    {% comment %} Google fonts {% endcomment %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
@@ -34,29 +35,21 @@
   <ul class="menu-bar">
     <li><a href="/"></a></li>
     <li>Kim van Zuilen 🤍 </li>
-    <li>Za 24 mei 12:32</li>
+    <li>{{ 'now' | date: "%a %d %b %H:%M" }}</li>
   </ul>
 </header>
 
-  <main>
-
-   {% block homeOverview %}{% endblock %}
-  {% block schoolSubjects %}{% endblock %}
+<main>
+  {% block homeOverview %}{% endblock %}
+  {% block Projects %}{% endblock %}
   {% block myWork  %}{% endblock %}
   {% block hacakthon  %}{% endblock %}
   {% block meesterproef  %}{% endblock %}
   {% block project %}{% endblock %}
-
-
-    {% comment %} {% block aboutMe %}{% endblock %}
-    {% block myWork %}{% endblock %}
-    {% block contact %}{% endblock %}
-    {% block experiences %}{% endblock %} {% endcomment %}
-    
-  </main>
+</main>
 
   <footer>
-  <nav class="navigationIcons">
+  <nav class="navigation-icons">
     <ul>
       <li class="icon-nav">
         <a href="/"
@@ -67,10 +60,10 @@
       </li>
 
       <li class="icon-nav">
-        <a href="/subjects-overview"
-        class="{% if path == '/subjects-overview' %}active{% endif %}">
+        <a href="/projects-overview"
+        class="{% if path == '/projects-overview' %}active{% endif %}">
         🗂️
-        <span class="icon-label">Subjects</span>
+        <span class="icon-label">projects</span>
         </a>
       </li>
 

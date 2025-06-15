@@ -1,11 +1,8 @@
-/* ⭐️⭐️⭐️⭐️ */
-/* CLIENT  */
-/* ⭐️⭐️⭐️⭐️ */
+
 
 /* global styles */
 @import 'reset.css';
 /* @import 'typography.css'; */
-
 
 /* server items inladen */
 /*.layout and view styling */
@@ -16,57 +13,3 @@
 /* component styling */
 @import '../server/components/card/card.css';
 
-/* 💗💗💗💗💗💗💗💗💗 */
-/* GENERAL STYLING */
-/* 💗💗💗💗💗💗💗💗💗 */
-
-
-/* CUSTOM PROPERTIES */
-:root{
-  /* main colors */
-  --color-white: #FFFFFF; 
-  --color-black: #000000;
-
-  /* accent colors */
-  --color-beige: #DDD6CE;
-  --color-beige-light: #F5EBDD;
-  --color-pastel-green: #D4F4DD;
-  --color-pastel-blue: #DCEEF2;
-  --color-pastel-pink: #FADADD;
-  --color-pastel-yellow: #FFF5C3;
-  --color-pastel-orange: #F2C6B4;
-  
-  /* font */
-  --font-primair: "unbounded", sans-serif;
-}
-
-
-/*  ⭐️ GENERAL STYLING ⭐️ */
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul, ol, li {
-  list-style: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
