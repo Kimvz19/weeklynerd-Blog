@@ -933,6 +933,15 @@ pre code {
 }
 
 
+hr{
+  border: none;
+  height: 5px;
+  background-color: white;
+  margin: 2em 0;
+  border-radius: 5rem;
+}
+
+
 /* weggooien?? */
 /* .introduction-designer {
   background: linear-gradient(90deg, #f598a8, #f6edb2);
