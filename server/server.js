@@ -86,61 +86,16 @@ app.get('/hackathon', async (req, res) => {
 
 // Projects work
 
-app.get('/project-tapchat', async (req, res) => {
+app.get('/reflection', async (req, res) => {
   try {
-    res.send(renderTemplate('server/views/projects/project-tapchat.liquid', {
-      title: 'Tapchat'
+    res.send(renderTemplate('server/views/projects/reflection.liquid', {
+      title: 'reflection'
     }, req));
   } catch (err) {
     console.error(err);
-    res.status(500).send('Project Tapchat kon niet laden');
+    res.status(500).send('Reflection page kon niet laden');
   }
 });
-
-app.get('/project-nintendo', async (req, res) => {
-  try {
-    res.send(renderTemplate('server/views/projects/project-nintendo.liquid', {
-      title: 'Nintendo Switch'
-    }, req));
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Project Nintendo Switch Lite kon niet laden');
-  }
-});
-
-app.get('/project-nintendo', async (req, res) => {
-  try {
-    res.send(renderTemplate('server/views/projects/project-nintendo.liquid', {
-      title: 'Nintendo Switch'
-    }, req));
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Project Nintendo Switch Lite kon niet laden');
-  }
-});
-
-app.get('/project-women-tech', async (req, res) => {
-  try {
-    res.send(renderTemplate('server/views/projects/project-women-tech.liquid', {
-      title: 'Women in Tech'
-    }, req));
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Project Women in Tech kon niet laden');
-  }
-});
-
-app.get('/project-tax', async (req, res) => {
-  try {
-    res.send(renderTemplate('server/views/projects/project-tax.liquid', {
-      title: 'Tax authorities'
-    }, req));
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Project Tax kon niet laden');
-  }
-});
-
 
 
 // Weekly nerds routes
