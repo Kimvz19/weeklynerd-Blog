@@ -430,14 +430,30 @@
   margin-bottom: 0.5rem;
 }
 
-.single-project .badge {
-  background: var(--color-badge-bg);
-  color: var(--color-badge-text);
+.single-project .badge-lightpink,
+.single-project .badge-darkpink,
+.single-project .badge-white
+ {
   font-size: 0.85rem;
   padding: 0.35rem 0.9rem;
   border-radius: var(--radius-pill);
   display: inline-block;
   margin-bottom: 0.75rem;
+}
+
+.badge-lightpink{
+  background: var(--color-badge-bg);
+  color: var(--color-badge-text);
+}
+
+.badge-darkpink{
+  background-color: #f8b7d8;
+  color: var(--color-badge-text);
+}
+
+.badge-white{
+  background-color: white;
+  color: var(--color-badge-text);
 }
 
 .single-project .live-website, .live-product {
