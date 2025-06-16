@@ -59,117 +59,89 @@
         <section class="introduction-project change-color">
           <ul>
             <li><p class="badge">Speaker 9</p></li>
-            <li><h1><span class="highlight">Printing</span> and Cash register technology </h1></li>
+            <li><h1><span class="highlight">Printing</span> and Cash register </h1></li>
             <li class="intro">
-                {% comment %} <ul>
-                <li>  Paypaine: minst krachtige taal</li>
-                <li>HTML & CSS: gebruiken voor error prevention</li>
-                <li> JSX: als alternatief benoemd</li>
-                </ul> {% endcomment %}
             </li>
           </ul>
         </section>
+
+
+        <article class="project-section">
+          <div class="text">
+            <h2 class="gradient-greypink"> Summary </h2>
+            <p>
+              Niels came to talk about his passion for printing and cash registers. He explained about the way printers work, how every printer is different and how his company came up with a 
+              idea to build a cash register that can print receipts on any printer, eventhough the printers are not the same. 
+              I never stood still on how a printer works, but it very different for each printer. They don't use the same languages, the same outputs, so to find a way to fix this took a 
+              long time and a lot of trail and error. Niels tried to explaine how the process works, but it was all over the place!
+          </div>
+        </article>
+
+        <article class="project-section">
+          <div class="text">
+            <h2 class="gradient-greypink"> 💫 Reflectie</h2>
+            <p>
+            I never thought that I would be having a lecture on the languages of a printer. It was very interesting and also difficult and very impressive that he build 
+            a cash register that can print on any printer. I also didn't know that there are so many different languages in a printer, it's crazy. 
+            His talk was very impressive and the determination to build that and the time it took, wow! Really cool, but I could never!!
+            </p>
+          </div>
+        </article>
     </div>
-{% comment %} 
 
+    
     <section class="topic">
-      <h2>Custom Switches</h2>
-      <article>
-        <ul>
-          <li>&lt;label&gt;&lt;input type="checkbox"&gt;&lt;/label&gt;</li>
-          <li>appearance: none; in CSS om standaard styles te verwijderen</li>
-          <li>HTML pseudo-elementen: <code>::before</code>, <code>::after</code></li>
-          <li>CSS states: <code>:checked</code>, <code>:checked::before</code> → animatie via CSS</li>
-        </ul>
-      </article>
-    </section>
+  <h2>Cash register</h2>
+  <article>
+    <ul>
+      <li>Cash register based on web technology</li>
+      <li>Receipt printer on USB</li>
+      <li>USB device enumeration: TL;DR → multiple endpoints</li>
+    </ul>
+  </article>
+</section>
 
-    <section class="topic">
-      <h2>Input Styling</h2>
-      <article>
-        <ul>
-          <li><code>:focus-visible</code> → alleen met toetsenbord zichtbaar</li>
-          <li>gebruik <code>outline</code>, <code>outline-offset</code></li>
-        </ul>
-      </article>
-    </section>
+<section class="topic">
+  <h2>Receipts printer & ASCII</h2>
+  <article>
+    <ul>
+      <li>Espon TM-930: years 70 technology</li>
+      <li>Printer works with ASCII → has grades, signes & interchange-information</li>
+      <li>Escape characters gets used to send commands</li>
+    </ul>
+  </article>
+</section>
 
-    <section class="topic">
-      <h2>Input Type Tricks</h2>
-      <article>
-        <p><code>&lt;input type="color"&gt;</code> → native color picker</p>
-      </article>
-    </section>
+<section class="topic">
+  <h2>Unicode & Codepages</h2>
+  <article>
+    <ul>
+      <li>Codepages select → change of language</li>
+      <li>use of an library like <code>CodepageEncoder</code></li>
+    </ul>
+  </article>
+</section>
 
-    <section class="topic">
-      <h2>Page Animations</h2>
-      <article>
-        <h3>Smooth scroll naar anchors:</h3>
-        <pre><code>html {
-  scroll-behavior: smooth;
-}</code></pre>
+<section class="topic">
+  <h2>Images Printing</h2>
+  <article>
+    <ul>
+      <li>Images had to be set to black/white</li>
+      <li>1-bit dithering with Atkinson-algoritm</li>
+      <li>For each 3 colomns couning bits  → bitmap output</li>
+    </ul>
+  </article>
+</section>
 
-        <h3>Media query voor bewegingsvoorkeur:</h3>
-        <pre><code>@media (prefers-reduced-motion: no-preference) {
-  /* animaties hier */
-}</code></pre>
-      </article>
-    </section>
-
-    <section class="topic">
-      <h2>Extra</h2>
-      <article>
-        <ul>
-          <li><code>.my-target</code> → <code>scroll-margin-top: 20px;</code> als buffer bij anchor jumps</li>
-          <li>"Weekly nerd" 🧑‍💻</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="topic">
-      <h2>Accordion & Dialog (Details/Summary & Pop-ups)</h2>
-
-      <article>
-        <h3>Accordion</h3>
-        <pre><code>&lt;details&gt;
-  &lt;summary&gt;Titel&lt;/summary&gt;
-  Inhoud
-&lt;/details&gt;</code></pre>
-        <ul>
-          <li><code>details[open]</code> → zichtbaar</li>
-          <li><code>summary::marker</code>, <code>summary:hover</code>, <code>cursor: pointer</code></li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Dialog</h3>
-        <pre><code>&lt;dialog&gt;
-  &lt;p&gt;Inhoud&lt;/p&gt;
-&lt;/dialog&gt;
-
-&lt;script&gt;
-  dialog.showModal();
-&lt;/script&gt;</code></pre>
-        <ul>
-          <li>Pop-up behavior</li>
-          <li><code>form</code> met <code>method</code> + button met <code>type</code></li>
-          <li>Dialog backdrop (via ::backdrop)</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="topic">
-      <h2>Formulieren & Select</h2>
-      <article>
-        <ul>
-          <li><code>&lt;select&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;</code> = basis dropdown</li>
-          <li><code>appearance: none;</code> = styling van select</li>
-          <li><code>::after</code> = pijltje of styling</li>
-          <li><code>form</code> met <code>method</code> en button met <code>type</code></li>
-        </ul>
-      </article>
-    </section> {% endcomment %}
-
+<section class="topic">
+  <h2>cash drawn & DK Poort</h2>
+  <article>
+    <ul>
+      <li>DK-poort sends pulses to drawn trough the printer</li>
+      <li>Not all printers support</li>
+    </ul>
+  </article>
+</section>
     </div>
   </div>
   
