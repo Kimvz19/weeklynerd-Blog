@@ -439,7 +439,7 @@
   margin-bottom: 0.75rem;
 }
 
-.single-project .btn-primary {
+.single-project .live-website {
   background: var(--color-button-bg);
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius-pill);
@@ -450,7 +450,7 @@
   transition: var(--transition);
 }
 
-.single-project .btn-primary:hover {
+.single-project .live-website:hover {
   background: transparent;
   border: 2px solid var(--color-button-border);
 }
@@ -514,7 +514,15 @@
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 2rem;
-}
+
+  &:first-of-type {
+   .text{
+      align-items: center;
+      /* text-align: center; */
+    }
+   }
+  }
+
 
 .project-section .text {
   flex: 1;
@@ -530,6 +538,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
