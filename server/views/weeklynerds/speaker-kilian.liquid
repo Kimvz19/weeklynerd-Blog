@@ -3,9 +3,16 @@
 
 {% block project %}
 
-<main class="weekly-nerd-map">
-    <h2>Stop using JS, but instead HTML & CSS </h2>
-
+<ul class="subjects-overview">
+    <li><h2> ✨ Speaker Kilian ✨</h2></li>
+    <li><p>Scroll down to see my notations</p></li>
+    <li>  
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5m0 14-4-4m4 4 4-4"/>
+        </svg></li>
+    </li>
+</ul>
+    {% comment %} <h2>Stop using JS, but instead HTML & CSS </h2> {% endcomment %}
 
 <section class="map-overview">
 <div class="window">
@@ -44,19 +51,129 @@
         <li><span class="dot gray-dot"></span>Gray</li>
       </ul>
     </aside>
-  <main class="main-content">
 
-  {% comment %} Content in de weekyly nerd {% endcomment %}
-<div class="folders">
 
-</div>
+  <div class="main-content">
+  
+    <div class="single-project">
+        <section class="introduction-project change-color">
+          <ul>
+            <li><p class="badge">Speaker 1</p></li>
+            <li><h1><span class="highlight">Stop using JS,</span> but instead HTML & CSS</h1></li>
+            <li class="intro">
+                <ul>
+                <li>  Paypaine: minst krachtige taal</li>
+                <li>HTML & CSS: gebruiken voor error prevention</li>
+                <li> JSX: als alternatief benoemd</li>
+                </ul>
+            </li>
+          </ul>
+        </section>
+    </div>
 
-</main>
 
+    <section class="topic">
+      <h2>Custom Switches</h2>
+      <article>
+        <ul>
+          <li>&lt;label&gt;&lt;input type="checkbox"&gt;&lt;/label&gt;</li>
+          <li>appearance: none; in CSS om standaard styles te verwijderen</li>
+          <li>HTML pseudo-elementen: <code>::before</code>, <code>::after</code></li>
+          <li>CSS states: <code>:checked</code>, <code>:checked::before</code> → animatie via CSS</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="topic">
+      <h2>Input Styling</h2>
+      <article>
+        <ul>
+          <li><code>:focus-visible</code> → alleen met toetsenbord zichtbaar</li>
+          <li>gebruik <code>outline</code>, <code>outline-offset</code></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="topic">
+      <h2>Input Type Tricks</h2>
+      <article>
+        <p><code>&lt;input type="color"&gt;</code> → native color picker</p>
+      </article>
+    </section>
+
+    <section class="topic">
+      <h2>Page Animations</h2>
+      <article>
+        <h3>Smooth scroll naar anchors:</h3>
+        <pre><code>html {
+  scroll-behavior: smooth;
+}</code></pre>
+
+        <h3>Media query voor bewegingsvoorkeur:</h3>
+        <pre><code>@media (prefers-reduced-motion: no-preference) {
+  /* animaties hier */
+}</code></pre>
+      </article>
+    </section>
+
+    <section class="topic">
+      <h2>Extra</h2>
+      <article>
+        <ul>
+          <li><code>.my-target</code> → <code>scroll-margin-top: 20px;</code> als buffer bij anchor jumps</li>
+          <li>"Weekly nerd" 🧑‍💻</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="topic">
+      <h2>Accordion & Dialog (Details/Summary & Pop-ups)</h2>
+
+      <article>
+        <h3>Accordion</h3>
+        <pre><code>&lt;details&gt;
+  &lt;summary&gt;Titel&lt;/summary&gt;
+  Inhoud
+&lt;/details&gt;</code></pre>
+        <ul>
+          <li><code>details[open]</code> → zichtbaar</li>
+          <li><code>summary::marker</code>, <code>summary:hover</code>, <code>cursor: pointer</code></li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Dialog</h3>
+        <pre><code>&lt;dialog&gt;
+  &lt;p&gt;Inhoud&lt;/p&gt;
+&lt;/dialog&gt;
+
+&lt;script&gt;
+  dialog.showModal();
+&lt;/script&gt;</code></pre>
+        <ul>
+          <li>Pop-up behavior</li>
+          <li><code>form</code> met <code>method</code> + button met <code>type</code></li>
+          <li>Dialog backdrop (via ::backdrop)</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="topic">
+      <h2>Formulieren & Select</h2>
+      <article>
+        <ul>
+          <li><code>&lt;select&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;</code> = basis dropdown</li>
+          <li><code>appearance: none;</code> = styling van select</li>
+          <li><code>::after</code> = pijltje of styling</li>
+          <li><code>form</code> met <code>method</code> en button met <code>type</code></li>
+        </ul>
+      </article>
+    </section>
+
+    </div>
   </div>
   
 </div>
 
 </section>
-</main>
 {% endblock %}
