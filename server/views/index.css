@@ -449,6 +449,7 @@
 .badge-darkpink{
   background-color: #f8b7d8;
   color: var(--color-badge-text);
+  border: 1px solid white;
 }
 
 .badge-white{
@@ -502,7 +503,6 @@
 .change-color{
   background-color: #f1f2f2;
 }
-
 
 
 .introduction-project ul {
