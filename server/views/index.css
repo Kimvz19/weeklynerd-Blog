@@ -703,10 +703,112 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
-  
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* content van weekly nerds */
+
+/* Elke topic-sectie */
+.topic {
+  background-color: #f6e7ef;
+  border-left: 6px solid lightpink;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  ul, ol{
+    list-style: inside;
+    color: black;
+  }
+
+  li{
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  a{
+    color: black;
+    text-decoration: underline;
+  }
 }
 
-/* main */
+/* Titels */
+.topic h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+/* Subtitels binnen artikel */
+.topic h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/* Artikellijsten */
+.topic article ul {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.topic article ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Inline code */
+code {
+  background-color: #e07f96;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  color: white;
+}
+
+/* Codeblokken */
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .topic {
+    padding: 1rem;
+  }
+
+  .topic h2 {
+    font-size: 1.4rem;
+  }
+
+  pre {
+    font-size: 0.85em;
+  }
+}
+
+
+/* Content in de folder */
 .folders {
   display: flex;
   flex-wrap: wrap;
